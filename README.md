@@ -1,5 +1,5 @@
 # WebBased-SearchApp-CodingAssignment
-Web based search application .
+Web based search application.
 
 
 -I have done Basic Features as well as some advanced feature such as Faceting and Stemming.
