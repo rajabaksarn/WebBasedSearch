@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "dgSpecHash": "/JPvMtKFGzt7yKeLegZMvU/N8Fu6EzIyX/zQkIYvgqdMjvkZP39uxYyfAtPRpJy2v2HHeo3nreWATT7QezHq9Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Rajabaskar\\Downloads\\WebBasedSearchApp-main\\WebBasedSearchApp-main\\MarketingCodingAssignment\\MarketingCodingAssignment\\MarketingCodingAssignment.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Rajabaskar\\.nuget\\packages\\bitmiracle.libtiff.net\\2.4.649\\bitmiracle.libtiff.net.2.4.649.nupkg.sha512",
+    "C:\\Users\\Rajabaskar\\.nuget\\packages\\ironsoftware.system.drawing\\2023.9.2\\ironsoftware.system.drawing.2023.9.2.nupkg.sha512",
+    "C:\\Users\\Rajabaskar\\.nuget\\packages\\ironxl.excel\\2023.9.29\\ironxl.excel.2023.9.29.nupkg.sha512",
+    "C:\\Users\\Rajabaskar\\.nuget\\packages\\j2n\\2.0.0\\j2n.2.0.0.nupkg.sha512",
+    "C:\\Users\\Rajabaskar\\.nuget\\packages\\lucene.net\\4.8.0-beta00016\\lucene.net.4.8.0-beta00016.nupkg.sha512",
+    "C:\\Users\\Rajabaskar\\.nuget\\packages\\lucene.net.analysis.common\\4.8.0-beta00016\\lucene.net.analysis.common.4.8.0-beta00016.nupkg.sha512",
+    "C:\\Users\\Rajabaskar\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\2.0.0\\microsoft.extensions.configuration.abstractions.2.0.0.nupkg.sha512",
+    "C:\\Users\\Rajabaskar\\.nuget\\packages\\microsoft.extensions.primitives\\2.0.0\\microsoft.extensions.primitives.2.0.0.nupkg.sha512",
+    "C:\\Users\\Rajabaskar\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\Rajabaskar\\.nuget\\packages\\sixlabors.fonts\\1.0.0\\sixlabors.fonts.1.0.0.nupkg.sha512",
+    "C:\\Users\\Rajabaskar\\.nuget\\packages\\sixlabors.imagesharp\\3.0.1\\sixlabors.imagesharp.3.0.1.nupkg.sha512",
+    "C:\\Users\\Rajabaskar\\.nuget\\packages\\sixlabors.imagesharp.drawing\\1.0.0\\sixlabors.imagesharp.drawing.1.0.0.nupkg.sha512",
+    "C:\\Users\\Rajabaskar\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
+    "C:\\Users\\Rajabaskar\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.4.0\\system.runtime.compilerservices.unsafe.4.4.0.nupkg.sha512"
+  ],
+  "logs": []
+}

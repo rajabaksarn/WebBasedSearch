@@ -1,0 +1,154 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<link href="~/datatable/css/jquery.datatables.min.css" rel="stylesheet" />
+<link href="~/datatable/css/datatable.css" rel="stylesheet" />
+<link href="~/datatable/css/datatable-bootstrap.css" rel="stylesheet" />
+
+
+<style>
+    #tblMoviesData_filter {
+        display: none;
+    }
+</style>
+<div class="text-center">
+    <h1 class="display-4">Search</h1>
+    <span>
+        <input type="search" onKeyUp="ValueKeyPress(this)" style="margin-top: 25px;">
+    </span>
+
+    <div class="row resizeheader1">
+        <div class="col-md-12">
+            <div id="tblMovies" class="table-responsive"></div>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts{
+    <script src="~/datatable/js/jquery.datatables.min.js"></script> 
+    <script type="text/javascript">
+
+ 
+        function ValueKeyPress(e) {
+            GetFilmdata(e.value);
+        }
+
+        function GetFilmdata(search) {
+
+            if (search == undefined)
+                search = '';
+
+            var tablecontent = '<table id="tblMoviesData" class="table table-responsive table-bordered table-striped display nowrap" style="width:100%">\
+                                                          <thead> <tr>\
+                                                          <th> Id</th>\
+                                                          <th>Budget</th>\
+                                                          <th>Genres</th>\
+                                                          <th>Original_language</th>\
+                                                          <th>Overview</th>\
+                                                          <th>Popularity</th>\
+                                                          <th>Production Companies</th>\
+                                                          <th>Release Date</th>\
+                                                          <th>Revenue</th>\
+                                                          <th>Runtime</th>\
+                                                          <th>Tagline</th>\
+                                                          <th>Title</th>\
+                                                          <th>Vote Average</th>\
+                                                          <th>Vote Count</th>\
+                                                          </thead > <tbody></tbody></table > ';
+
+            $("#tblMovies").html(tablecontent);
+            datatable = $('#tblMoviesData')
+                .DataTable({
+                    "sAjaxSource": "Home/GetCSVData?searchData=" + search,
+                    "bServerSide": true,
+                    "bProcessing": true,
+                    "bSearchable": false,
+                    "scrollX": true,
+                    "scrolly": true,
+                    "searchHighlight": true,
+
+                    "order": [[1, 'asc']],
+                    "language": {
+                        "emptyTable": "No record found.",
+                        "processing":
+                            '<i class="fa fa-spinner fa-spin fa-3x fa-fw" style="color:#2a2b2b;"></i><span class="sr-only">Loading...</span> '
+                    },
+                    "columns": [
+                        {
+                            "data": "id",
+                            "autoWidth": true,
+                            "searchable": true
+                        },
+                        {
+                            "data": "budget",
+                            "autoWidth": true,
+                            "searchable": true
+                        },
+                        {
+                            "data": "genres",
+                            "autoWidth": true,
+                            "searchable": true
+                        },
+                        {
+                            "data": "original_language",
+                            "autoWidth": true,
+                            "searchable": true
+                        },
+                        {
+                            "data": "overview",
+                            "autoWidth": true,
+                            "searchable": true
+                        },
+                        {
+                            "data": "popularity",
+                            "autoWidth": true,
+                            "searchable": true
+                        },
+                        {
+                            "data": "production_companies",
+                            "autoWidth": true,
+                            "searchable": true
+                        },
+                        {
+                            "data": "release_date",
+                            "autoWidth": true,
+                            "searchable": true
+                        },
+                        {
+                            "data": "revenue",
+                            "autoWidth": true,
+                            "searchable": true
+                        },
+                        {
+                            "data": "runtime",
+                            "autoWidth": true,
+                            "searchable": true
+                        },
+                        {
+                            "data": "tagline",
+                            "autoWidth": true,
+                            "searchable": true
+                        },
+                        {
+                            "data": "title",
+                            "autoWidth": true,
+                            "searchable": true
+                        },
+                        {
+                            "data": "vote_average",
+                            "autoWidth": true,
+                            "searchable": true
+                        },
+                        {
+                            "data": "vote_count",
+                            "autoWidth": true,
+                            "searchable": true
+                        },
+                    ]
+                });
+        }
+    </script>
+}
+
